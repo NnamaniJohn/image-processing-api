@@ -50,7 +50,7 @@ export default class File {
    * @param {string} [filename=''] Filename (without file extension).
    * @return {boolean} True if image is available, else false.
    */
-  static async isImageAvailable(filename: string = ''): Promise<boolean> {
+  static async isImageAvailable(filename = ''): Promise<boolean> {
     if (!filename) {
       return false; // Fail early
     }
